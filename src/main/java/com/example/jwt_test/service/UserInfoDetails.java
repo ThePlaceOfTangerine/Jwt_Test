@@ -1,11 +1,10 @@
-package service;
+package com.example.jwt_test.service;
 
-import entity.UserInfo;
+import com.example.jwt_test.entity.UserInfo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -45,7 +44,7 @@ public class UserInfoDetails implements UserDetails {
         return true;
     }
 
-    Override
+    @Override
     public boolean isAccountNonLocked() {
         return true;
     }

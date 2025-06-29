@@ -1,4 +1,4 @@
-package filter;
+package com.example.jwt_test.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import service.JwtService;
+import com.example.jwt_test.service.JwtService;
 
 import java.io.IOException;
 

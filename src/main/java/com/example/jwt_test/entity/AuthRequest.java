@@ -1,4 +1,4 @@
-package entity;
+package com.example.jwt_test.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

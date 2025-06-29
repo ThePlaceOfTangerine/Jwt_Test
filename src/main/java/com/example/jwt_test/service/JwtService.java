@@ -1,4 +1,4 @@
-package service;
+package com.example.jwt_test.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

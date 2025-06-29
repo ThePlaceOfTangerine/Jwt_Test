@@ -1,16 +1,15 @@
-package controller;
+package com.example.jwt_test.controller;
 
-import entity.AuthRequest;
-import entity.UserInfo;
+import com.example.jwt_test.entity.AuthRequest;
+import com.example.jwt_test.entity.UserInfo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
-import service.JwtService;
-import service.UserInfoService;
+import com.example.jwt_test.service.JwtService;
+import com.example.jwt_test.service.UserInfoService;
 
 @RestController
 @RequestMapping("/auth")
@@ -30,7 +29,7 @@ public class UserController {
 
     @PostMapping("/addNewUser")
     public String addNewUser(@RequestBody UserInfo userInfo) {
-        return service.addUser(userInfo);
+        return userInfoService.addUser(userInfo);
     }
 
     @PostMapping("/generateToken")

@@ -1,6 +1,6 @@
-package config;
+package com.example.jwt_test.config;
 
-import filter.JwtAuthFilter;
+import com.example.jwt_test.filter.JwtAuthFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,8 +23,8 @@ public class SecurityConfig {
     private final JwtAuthFilter jwtAuthFilter;
     private final UserDetailsService userDetailsService;
 
-    public SecurityConfig (JwtAuthFilter jwtAuthFiter, UserDetailsService userDetailsService) {
-        this.jwtAuthFilter = jwtAuthFiter;
+    public SecurityConfig (JwtAuthFilter jwtAuthFilter, UserDetailsService userDetailsService) {
+        this.jwtAuthFilter = jwtAuthFilter;
         this.userDetailsService = userDetailsService;
     }
 
